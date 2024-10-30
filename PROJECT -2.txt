@@ -1,0 +1,25 @@
+PROJECT -2  Project will be centered around creating a "Word Counter" program
+
+SOURCE CODE
+# Function to count words in a given text
+def count_words(text):
+    # Split the text into words based on spaces
+    words = text.split()
+    return len(words)
+def main():
+    print("Welcome to the Word Counter Program!")
+    user_input = input("Please enter a sentence or paragraph: ").strip()
+    if not user_input:
+        print("Error: Input cannot be empty. Please enter some text.")
+        return
+    
+    # Count the words in the input text
+    word_count = count_words(user_input)
+    
+    # Display the result to the user
+    print(f"\nThe text contains {word_count} word(s).")
+
+# Start the program
+if __name__ == "__main__":
+    main()
+
